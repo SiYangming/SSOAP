@@ -5,7 +5,7 @@ This is just a copy of R-package `SSOAP`. It is [removed from CRAN](https://cran
 Install via:
 ```r
 install.packages("devtools")
-devtools::install_github("bdemeshev/SSOAP")
+devtools::install_github("cgu-dados/SSOAP")
 ```
 
 Or try
