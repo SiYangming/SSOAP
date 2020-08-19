@@ -169,7 +169,7 @@ function(con, nameSpaces, method, ...,
 
   
  writeSOAPBody(method, ..., .soapArgs = .soapArgs, xmlns = xmlns, con = con,
-                .types = .types, .literal = .literal, .elementFormQualified = .elementFormQualified)
+                .types = NULL, .literal = .literal, .elementFormQualified = .elementFormQualified)
 
  if(is(con, "connection")) {
     cat("</SOAP-ENV:Envelope>\r\n", file=con)
