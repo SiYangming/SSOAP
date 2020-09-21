@@ -1,5 +1,3 @@
-SOAPType <- XMLSchema:::SOAPType
-
 setClass("SOAPClientInterface",
            representation(functions = "list",
                           classes = "list"))
