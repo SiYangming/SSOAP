@@ -328,7 +328,7 @@ processWSDL <-
 function(fileName = "KEGG.wsdl", handlers = WSDLParseHandlers(fileName),
          nameSpaces  = character(), useInternalNodes = TRUE, verbose = FALSE,
          port = 1L, checkCircularTypes = TRUE)
-{
+ {
   if(!is(fileName, "XMLAbstractDocument")) {
     if(useInternalNodes)
        wsdl = parseSchemaDoc(fileName)
@@ -338,7 +338,6 @@ function(fileName = "KEGG.wsdl", handlers = WSDLParseHandlers(fileName),
      wsdl = fileName
 
   root = xmlRoot(wsdl)
-
  
     # Get the server/port node we want
   warnMultiServices = missing(port)
