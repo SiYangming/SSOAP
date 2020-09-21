@@ -327,6 +327,7 @@ processWSDL <-
 function(fileName = "KEGG.wsdl", handlers = WSDLParseHandlers(fileName),
          nameSpaces  = character(), useInternalNodes = TRUE, verbose = FALSE,
          port = 1L, checkCircularTypes = TRUE)
+SOAPType <- XMLSchema:::SOAPType
 {
   if(!is(fileName, "XMLAbstractDocument")) {
     if(useInternalNodes)
